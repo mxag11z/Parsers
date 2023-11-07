@@ -47,7 +47,7 @@ public class Interprete {
     private static void ejecutar(String source) {
         try{
             Scanner scanner = new Scanner(source);
-            List<Token> tokens = scanner.scan();
+            List<Token> tokens = scanner.scanTokens();
 
             for(Token token : tokens){
                 System.out.println(token);

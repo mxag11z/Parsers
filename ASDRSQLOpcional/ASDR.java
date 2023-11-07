@@ -94,7 +94,7 @@ public class ASDR implements Parser{
         }
     }
 
-    // A1 -> ,A | Ɛ
+    // A1 -> ,A | epsilon
     private void A1(){
         if(hayErrores)
             return;
@@ -105,7 +105,7 @@ public class ASDR implements Parser{
         }
     }
 
-    // A3 -> . id | Ɛ
+    // A3 -> . id | epsilon
     private void A3(){
         if(hayErrores)
             return;
