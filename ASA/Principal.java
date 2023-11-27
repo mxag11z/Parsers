@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -32,8 +33,8 @@ public class Principal {
             System.out.println(token);
         }*/
 
-        Parser parser = new ASDI(tokens);
-        parser.parse();
+        ASA analizador = new ASA(tokens);
+        analizador.parse();
     }
 
     /*
@@ -46,10 +47,10 @@ public class Principal {
     }
 
     private static void reportar(int linea, String donde, String mensaje){
-        System.err.println(
+        System.out.println(
                 "[linea " + linea + "] Error " + donde + ": " + mensaje
         );
         existenErrores = true;
     }
-
+    
 }
