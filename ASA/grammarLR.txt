@@ -1,9 +1,0 @@
-1. Q → select D from T
-2. D → distinct P | P
-3. P → * | A
-4. A → A , A1 | A1
-5. A1 → id A2
-6. A2 → . id | Ɛ
-7. T → T , T1 | T1
-8. T1 → id T2
-9. T2 → id | Ɛ
